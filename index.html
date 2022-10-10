@@ -7,11 +7,166 @@
 <!DOCTYPE html> 
 <html lang ="en">
 <head> 
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 270px auto;
+            background-color: #2196F3;
+        }
+        .nav {
+            background-color: aquamarine;
+            grid-column: 1 / span 2;
+        }
+        .intro {
+            background-color: lightgreen;
+        }
+        .intro img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .main {
+            background-color: lightblue;
+        }
+        .main ul{
+            list-style-type: square;
+        }
+        .main ol{
+            list-style-type: upper-roman;
+        }
+        .main img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        table, th, td {
+            border:1px solid black;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        tr:nth-child(odd) {background-color: gray;}
+        table {
+            text-align:center
+        }
+    </style>
     <title>Sam Grant CV</title> 
+    <link rel="icon" type="image/x-icon" href="profilePicture.jpg">
 </head> 
 
 <body> 
+    <div class="grid-container">
+        <div class="nav">
+            <p> Header/Navigation Area</p>
+        </div>
+        <div class="intro">
+            <img src="profilePicture.jpg" alt="Profile Image">
+            <h1>Sam Grant</h1>
+            <h2>Finance Student</h2>
+            <hr>
+            <h3>Profile</h3>
+            <p> My name is Sam Grant and I am a junior at Gonzaga University. I am a passionate and 
+                dependable college student pursuing a Bachelor of Business Administration degree 
+                with a Finance concentration. I love solving difficult problems and am excited to gain
+                experience in the business world.</p> 
+            <hr>
+            <hr>
+            <h3>Contact</h3>
+            <p>PHONE: </p>
+            <p>206-XXX-XXXX</p>
+            <p>EMAIL: </p>
+            <p>sgrant4@zagmail.gonzaga.edu</p>
+            <hr>
+        </div>
+        <div class="main">
+            <!-- Career Summary-->
+            <h1>Career Summary</h1> 
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Role</th>
+                    <th>Dates of employment</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <th>New Venture Lab</th>
+                    <td>Project Manager</td>
+                    <td>August 2022 - Present</td>
+                    <td><p>In charge of a team of student consultants to develop a new marketing campaign for a local 
+                            business. Worked closely with entrepreneur to revamp their social media presence. Performed 
+                            detailed analysis of competitors and market opportunities.</p>
+                        </td>
+                </tr>
+                <tr>
+                    <th>Benchmark NW Landscaping</th>
+                    <td>Landscaper</td>
+                    <td>May 2021 - August 2021</td>
+                    <td><p>Communicated and worked collaboratively with a team of experienced landscapers to build and 
+                            maintain residential landscapes. Followed complex landscaping plans and demonstrated skilled 
+                            use and maintenance of tools and equipment. </p>
+                        </td>
+                </tr>
+            </table>
 
+            <!-- Core Skills -->
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Leadership experience</li>
+                <li>Communication skills</li>
+                <li>Problem-solving abilities</li>
+                <li>Computer proficiency (See <a href="EducationandQualifications.html#Qualifications"> Qualifications </a>)</li>
+            </ul>
 
+            <!--Education and Qualifications-->
+            <h1>Education and Qualifications</h1> 
+            <table>
+                <caption>Education</caption>
+                <tr>
+                    <th></th>
+                    <th>Major</th>
+                    <th>Minors</th>
+                    <th>GPA</th>
+                    <th>Honors</th>
+                    <th>Date of Graduation</th>
+                </tr>
+                <tr>
+                    <th>Gonzaga University</th>
+                    <td>Business Administration with a concentration in Finance</td>
+                    <td>Computer Science and Entrepreneurship</td>
+                    <td>3.88</td>
+                    <td>Presidents List: Fall 2020, Spring 2021, Fall 2021</td>
+                    <td>May 2024</td>
+                </tr>
+            </table>
+
+            <table id="Qualifications">
+                <caption>Qualifications</caption>
+                <tr>
+                    <th></th>
+                    <th>Business Skills</th>
+                    <th>Coding knowledge</th>
+                    <th>Social Media</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><p> Microsoft Word, Excel, PowerPoint; Google Sheets, Slides, Docs, Forms, Sites, Drive</p></td>
+                    <td><p>Python, C++, SQL, HTML, Kotlin</p></td>
+                    <td><p>Instagram, TikTok, Facebook, LinkedIn</p></td>
+                </tr>
+            </table>
+
+            <!-- Interests and Hobbies-->
+            <h1>Interests and Hobbies</h1> 
+            <ol>
+                <li>Reading</li>
+                <li>Cooking</li>
+                <li>Sports</li>
+                <li>Hiking</li>
+                <li>Video Games</li>
+                <li><a href="https://www.fool.com/" target="_blank"><img src="stockGraph.webp" alt="Graph of stock prices" width="315" height="170"></a></li>
+            </ol>
+        </div>
+    </div>
 </body> 
 </html> 
