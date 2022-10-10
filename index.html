@@ -44,8 +44,9 @@
             margin-right: 20px;
             margin-top: auto;   
         }
+        /* EXTRA CREDIT special effect */ 
         .intro {
-            background-color: lightgreen;
+            background: linear-gradient(lightgreen, yellow);
             padding: 10px;
         }
         .intro img {
@@ -55,6 +56,9 @@
             width: 200px;
             height: 300px;
             border-radius: 18px;
+        }
+        .intro h2{
+            text-align: center;
         }
         #br1::after{
             content: "\a";
@@ -80,8 +84,17 @@
         .main img {
             border-radius: 8px;
         }
-        .main h1{
+        h1{
             text-align: center;
+        }
+        /* EXTRA CREDIT custom font */
+        /* Arial is used for all headers and table headers. Times New Roman is used for all body text*/
+        h1, h2, h3, th{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* EXTRA CREDIT custom font */
+        p, td, li{
+            font-family: 'Times New Roman', Times, serif;
         }
         caption{
             font-weight: bold;
@@ -92,8 +105,9 @@
         table, th, td {
             border:1px solid black;
         }
+        /* EXTRA CREDIT special effect */ 
         th{
-            background-color: lightgreen;
+            background: linear-gradient(lightgreen, yellow);;
         }
         tr:nth-child(even) {background-color: white;}
         tr:nth-child(odd) {background-color: lightgray;}
