@@ -8,15 +8,19 @@
 <html lang ="en">
 <head> 
     <style>
+        body{
+            background-color: black;
+        }
         .grid-container {
             display: grid;
             grid-template-columns: 270px auto;
             background-color: #2196F3;
         }
-        .nav {
+        .navigation {
             background-color: aquamarine;
             grid-column: 1 / span 2;
         }
+        
         .intro {
             background-color: lightgreen;
         }
@@ -37,9 +41,6 @@
             list-style-type: upper-roman;
         }
         .main img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
             border-radius: 8px;
         }
         table, th, td {
@@ -57,12 +58,20 @@
 
 <body> 
     <div class="grid-container">
-        <div class="nav">
-            <p> Header/Navigation Area</p>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><img src="logo.png" alt="Profile Image"></li>
+                    <li><a href=#intro> Introduction </a></li>
+                    <li><a href=#career> Career Summary </a></li>
+                    <li><a href=#ed> Education and Qualifications </a></li>
+                    <li><a href=#hobbies> Intrests and Hobbies </a></li>
+                </ul>
+            </nav>
         </div>
         <div class="intro">
             <img src="profilePicture.jpg" alt="Profile Image">
-            <h1>Sam Grant</h1>
+            <h1 id="intro">Sam Grant</h1>
             <h2>Finance Student</h2>
             <hr>
             <h3>Profile</h3>
@@ -81,7 +90,7 @@
         </div>
         <div class="main">
             <!-- Career Summary-->
-            <h1>Career Summary</h1> 
+            <h1 id="career">Career Summary</h1> 
             <table>
                 <tr>
                     <th></th>
@@ -109,17 +118,8 @@
                 </tr>
             </table>
 
-            <!-- Core Skills -->
-            <h2>Core Skills</h2>
-            <ul>
-                <li>Leadership experience</li>
-                <li>Communication skills</li>
-                <li>Problem-solving abilities</li>
-                <li>Computer proficiency (See <a href="EducationandQualifications.html#Qualifications"> Qualifications </a>)</li>
-            </ul>
-
             <!--Education and Qualifications-->
-            <h1>Education and Qualifications</h1> 
+            <h1 id="ed">Education and Qualifications</h1> 
             <table>
                 <caption>Education</caption>
                 <tr>
@@ -155,9 +155,17 @@
                     <td><p>Instagram, TikTok, Facebook, LinkedIn</p></td>
                 </tr>
             </table>
+            <!-- Core Skills -->
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Leadership experience</li>
+                <li>Communication skills</li>
+                <li>Problem-solving abilities</li>
+                <li>Computer proficiency </li>
+            </ul>
 
             <!-- Interests and Hobbies-->
-            <h1>Interests and Hobbies</h1> 
+            <h1 id="hobbies">Interests and Hobbies</h1> 
             <ol>
                 <li>Reading</li>
                 <li>Cooking</li>
