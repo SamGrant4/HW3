@@ -2,7 +2,7 @@
     Name: Sam Grant
     Class: CPSC 322
     Assignment: HW 3
-    Last Modified: 10-7-22
+    Last Modified: 10-9-22
 -->
 <!DOCTYPE html> 
 <html lang ="en">
@@ -46,16 +46,30 @@
         }
         .intro {
             background-color: lightgreen;
+            padding: 10px;
         }
         .intro img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 400px;
+            width: 200px;
             height: 300px;
+            border-radius: 18px;
+        }
+        #br1::after{
+            content: "\a";
+            white-space: pre;
+        }
+        #br2::before{
+            content: "\a";
+            white-space: pre;
+        }
+        hr{
+            border: 1px solid white;
         }
         .main {
             background-color: lightblue;
+            padding: 10px;
         }
         .main ul{
             list-style-type: square;
@@ -66,11 +80,23 @@
         .main img {
             border-radius: 8px;
         }
+        .main h1{
+            text-align: center;
+        }
+        caption{
+            font-weight: bold;
+        }
+        #hobbies{
+            text-align: left;
+        }
         table, th, td {
             border:1px solid black;
         }
-        tr:nth-child(even) {background-color: #f2f2f2;}
-        tr:nth-child(odd) {background-color: gray;}
+        th{
+            background-color: lightgreen;
+        }
+        tr:nth-child(even) {background-color: white;}
+        tr:nth-child(odd) {background-color: lightgray;}
         table {
             text-align:center
         }
@@ -84,16 +110,16 @@
         <nav class="navigation-bar">
             <ul>
                 <li><img class="logo" src="logo.png" alt="Profile Image"></li>
-                <li><a href=#intro> Introduction </a></li>
+                <li><a href=#name> Introduction </a></li>
                 <li><a href=#career> Career Summary </a></li>
                 <li><a href=#ed> Education and Qualifications </a></li>
                 <li><a href=#hobbies> Intrests and Hobbies </a></li>
             </ul>
         </nav>
-        <div class="intro">
+        <section class="intro">
             <img src="profilePicture.jpg" alt="Profile Image">
-            <h1 id="intro">Sam Grant</h1>
-            <h2>Finance Student</h2>
+            <h1 id="name">Sam Grant</h1>
+            <h2 id="br1">Finance Student</h2>
             <hr>
             <h3>Profile</h3>
             <p> My name is Sam Grant and I am a junior at Gonzaga University. I am a passionate and 
@@ -101,15 +127,14 @@
                 with a Finance concentration. I love solving difficult problems and am excited to gain
                 experience in the business world.</p> 
             <hr>
-            <hr>
-            <h3>Contact</h3>
+            <h3 id="br2">Contact</h3>
             <p>PHONE: </p>
             <p>206-XXX-XXXX</p>
             <p>EMAIL: </p>
             <p>sgrant4@zagmail.gonzaga.edu</p>
             <hr>
-        </div>
-        <div class="main">
+        </section>
+        <section class="main">
             <!-- Career Summary-->
             <h1 id="career">Career Summary</h1> 
             <table>
@@ -160,17 +185,15 @@
                     <td>May 2024</td>
                 </tr>
             </table>
-
-            <table id="Qualifications">
+            <br>
+            <table id="qualifications">
                 <caption>Qualifications</caption>
                 <tr>
-                    <th></th>
                     <th>Business Skills</th>
                     <th>Coding knowledge</th>
                     <th>Social Media</th>
                 </tr>
                 <tr>
-                    <th></th>
                     <td><p> Microsoft Word, Excel, PowerPoint; Google Sheets, Slides, Docs, Forms, Sites, Drive</p></td>
                     <td><p>Python, C++, SQL, HTML, Kotlin</p></td>
                     <td><p>Instagram, TikTok, Facebook, LinkedIn</p></td>
@@ -195,7 +218,7 @@
                 <li>Video Games</li>
                 <li><a href="https://www.fool.com/" target="_blank"><img src="stockGraph.webp" alt="Graph of stock prices" width="315" height="170"></a></li>
             </ol>
-        </div>
+        </section>
     </div>
 </body> 
 </html> 
