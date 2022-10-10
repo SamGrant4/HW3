@@ -14,13 +14,36 @@
         .grid-container {
             display: grid;
             grid-template-columns: 270px auto;
-            background-color: #2196F3;
         }
-        .navigation {
-            background-color: aquamarine;
+        .navigation-bar {
+            background-color: rgb(68, 67, 67);
             grid-column: 1 / span 2;
         }
-        
+        .navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(68, 67, 67);
+            overflow: hidden;
+            list-style-type: none;
+        }
+        .navigation-bar li {
+            float: left;
+        }
+        .navigation-bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            width: 85px;
+            height: 63px;
+            margin-right: 20px;
+            margin-top: auto;   
+        }
         .intro {
             background-color: lightgreen;
         }
@@ -28,8 +51,8 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 100%;
-            height: auto;
+            width: 400px;
+            height: 300px;
         }
         .main {
             background-color: lightblue;
@@ -58,17 +81,15 @@
 
 <body> 
     <div class="grid-container">
-        <div class="navigation">
-            <nav>
-                <ul>
-                    <li><img src="logo.png" alt="Profile Image"></li>
-                    <li><a href=#intro> Introduction </a></li>
-                    <li><a href=#career> Career Summary </a></li>
-                    <li><a href=#ed> Education and Qualifications </a></li>
-                    <li><a href=#hobbies> Intrests and Hobbies </a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><img class="logo" src="logo.png" alt="Profile Image"></li>
+                <li><a href=#intro> Introduction </a></li>
+                <li><a href=#career> Career Summary </a></li>
+                <li><a href=#ed> Education and Qualifications </a></li>
+                <li><a href=#hobbies> Intrests and Hobbies </a></li>
+            </ul>
+        </nav>
         <div class="intro">
             <img src="profilePicture.jpg" alt="Profile Image">
             <h1 id="intro">Sam Grant</h1>
